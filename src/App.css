@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +38,128 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+#bg {
+  background-image: url('/src/Assets/landing.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-regis {
+  background-image: url('/src/Assets/regis.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-login {
+  background-image: url('/src/Assets/login.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#logo {
+  font-family: 'Playball', sans-serif;
+  font-size: 500;
+  position: relative;
+}
+
+#btn {
+  margin-right: 2em;
+}
+
+#btn-signin {
+  width: 80vh;
+  background: #f9e076;
+}
+
+#btn-signup {
+  width: 80vh;
+  background: #A27B5C;
+}
+
+#btn-signin-google {
+  width: 80vh;
+}
+
+#signin {
+  background: #A27B5C;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 50px 50px 0px;
+  width: 116px;
+  height: 37px;
+}
+
+#signin:hover {
+  font-weight: 500;
+}
+
+#signup {
+  background: #FFFFFF;
+  color: #A27B5C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 0px 0px 50px;
+  width: 116px;
+  height: 37px;
+}
+
+#signup:hover {
+  font-weight: 500;
+}
+
+#logout {
+  width: 10em;
+  background: #f9e076;
+}
+
+#profile-bar {
+  margin-top: 20em;
+}
+
+#profile-img {
+  border-radius: 100%;
+  border: #000;
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+#save-edit {
+  display: flex;
+  justify-content: center;
+  background: #A27B5C;
+  color: #FFFFFF;
+
+}
+
+#repeatPass {
+  color: red;
+}
+
+#emailVal {
+  color: red;
+}
+
+#post-button {
+  margin-top: 3em;
+  border-width: 1px;
+  background: #A27B5C;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1em;
+  color: #FFFFFF;
 }
